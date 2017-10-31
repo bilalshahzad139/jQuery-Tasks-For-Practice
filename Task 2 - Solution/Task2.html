@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Task2-Solution</title>
+	<script src="..\jquery-3.2.1.min.js" type="text/javascript"></script>
+	
+	<script>
+		
+		jQuery(document).ready(function(){
+			
+			//Find Button by ID
+		    var $btn = jQuery("#btnOK");
+
+		    //Handle click event of button
+		    $btn.click(function () {
+		        alert('button is clicked');
+		        return false;
+		    });
+
+		});
+	</script>
+	
+</head>
+<body>
+    <input type="button" id="btnOK" value="OK" />
+</body>
+</html>

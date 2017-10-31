@@ -1,0 +1,5 @@
+1- Get value of 'txtName' and show it in alert
+2- Get text of 'spName' and show it in alert
+3- Get selected value of 'cmbCountry'
+4- Get text of selected item of 'cmbCountry'
+5- Get html of 'divContainer'

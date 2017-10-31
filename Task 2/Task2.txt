@@ -1,0 +1,2 @@
+1- Find Button by ID
+2- Show alert when button will be clicked
