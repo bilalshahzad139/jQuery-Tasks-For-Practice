@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Task9-Solution</title>
+    <script src="..\jquery-3.2.1.min.js" type="text/javascript"></script>
+
+    <script>
+
+        jQuery(document).ready(function () {
+
+            var data = [];
+            data.push({ ID: 1, Name: 'abc 1' });
+            data.push({ ID: 2, Name: 'abc 2' });
+            data.push({ ID: 3, Name: 'abc 3' });
+
+            $("#btnGenerate").click(function () {
+                GenerateTable(data);
+
+                return false;
+            });
+            
+        });
+
+        function GenerateTable(d) {
+
+            for (var i = 0; i < d.length; i++) {
+                var obj = d[i];
+                var tr = $("<tr>");
+
+                var td = $("<td>").text(obj.ID);
+                tr.append(td);
+
+                td = $("<td>").text(obj.Name);
+                tr.append(td);
+
+                //1- Create hyperlink with every record
+                //2- On its click, ask from user and remove relevent the row
+
+                /*-------------------------Working Area for Task 9------------*/
+
+                var $a = $("<a>").attr('href', '#').text('X');
+                $a.click(function () {
+                    var r = confirm('Do you want to remove it?');
+                    if (r) {
+                        $(this).closest('tr').remove();
+                    }
+                });
+
+                td = $("<td>").append($a);
+                tr.append(td);
+
+                /*-------------------------------------*/
+
+
+                $("#tbody1").append(tr);
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <input type="button" id="btnGenerate" value="Generate" />
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody id="tbody1">
+
+        </tbody>
+    </table>
+</body>
+</html>

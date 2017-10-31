@@ -1,0 +1,3 @@
+----This is continution of Task 8
+1- Create hyperlink with every record
+2- On its click, ask from user and remove the relevent row
