@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Task6-Solution</title>
+    <script src="..\jquery-3.2.1.min.js" type="text/javascript"></script>
+
+    <script>
+
+        jQuery(document).ready(function () {
+
+            //1- Find all spans which has class 'name', and On click of span, display its text in alert & on console
+
+            //It will find elements and attach click event with each element
+            $(".name").click(function () {
+
+                var t = $(this).text();
+                alert(t);
+                console.log(t);
+            });
+
+            //OR
+            //Find elements and then iterate and attach event on elements one by one
+            $(".name").each(function () {
+                $(this).click(function () {
+                    var t = $(this).text();
+                    alert(t);
+                    console.log(t);
+                });
+
+            });
+
+
+            //You will see two alerts as we've bound click event twice above
+        });
+    </script>
+
+</head>
+<body>
+    <span class="name">Span 1</span><br />
+    <span class="name">Span 2</span><br />
+    <span class="name">Span 3</span><br />
+    <span >Span 4</span><br />
+</body>
+</html>
