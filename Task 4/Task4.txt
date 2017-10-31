@@ -1,0 +1,4 @@
+1- Read value from 'txtFirst'
+2- Read value from 'txtSecond'
+3- Apply validation and Add both numbers
+4- Show result in 'txtResult'
