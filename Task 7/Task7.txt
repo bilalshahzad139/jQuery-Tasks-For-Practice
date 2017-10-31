@@ -1,0 +1,2 @@
+1- Find all elements who has class 'test' and attach click event. 
+2- In click event, check if element has 'active' class. If it has, remove it else add it.
