@@ -1,0 +1,4 @@
+-- Complete GenerateTable() implementation
+
+1- Iterate provided array
+2- Create TRs & TDs to show data in Table body
